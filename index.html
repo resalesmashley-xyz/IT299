@@ -1,0 +1,223 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #2471a3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .tagline {
+    font-style: italic;
+    color: #ecf0f1;
+}
+
+nav {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-bar input[type="text"],
+.search-bar select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #2471a3;
+}
+
+#directory-results {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+#resource-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* Request Form Styling */
+#assistance-request-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#assistance-request-form input[type="text"],
+#assistance-request-form input[type="email"],
+#assistance-request-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#assistance-request-form button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#assistance-request-form button[type="submit"]:hover {
+    background-color: #2471a3;
+}
+
+/* Reporting Section */
+#reporting {
+    text-align: center; /* Center the content */
+}
+
+#admin-area {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: inline-block; /* Only take up necessary width */
+}
+
+#generate-report-button {
+    padding: 10px 15px;
+    background-color: #27ae60; /* Green color for report button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#generate-report-button:hover {
+    background-color: #219653;
+}
+
+#report-output {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #fff;
+    border-top: 3px solid #2c3e50;
+}
+
+/* Example Media Query */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input[type="text"],
+    .search-bar select {
+        width: 100%;
+    }
+}
