@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload and Playback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Video Upload and Playback</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="videoUpload" accept="video/*" required>
+        <button type="submit">Upload Video</button>
+    </form>
+    
+    <video id="videoPlayer" controls>
+        Your browser does not support the video tag.
+    </video>
+</div>
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function(event){
+        event.preventDefault();
+        const fileInput = document.getElementById('videoUpload');
+        const videoPlayer = document.getElementById('videoPlayer');
+        
+        const file = fileInput.files[0];
+        if (file) {
+            const fileURL = URL.createObjectURL(file);
+            videoPlayer.src = fileURL;
+        }
+    });
+</script>
+
+</body>
+</html>
